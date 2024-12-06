@@ -11,30 +11,21 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <
-
-    <!--<div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>-->
-    <div class="container">
-      <div id="card" class="col-4 col-lg-4 card">
-        <div id="card" class="col-lg-12 numeroAleatorioParaCarta">
-          <h1 class="remplazar-numero">Carta</h1>
-          <button id="boton">Cambie carta aqui</button>
-        </div>
-      </div>
+  <body
+    class="d-flex flex-column align-items-center justify-content-center bg-success vh-100"
+  >
+    <div class="card text-center p-3">
+      <div class="palo top-left position-absolute"></div>
+      <div class="numero remplazar-numero display-4"></div>
+      <div class="palo bottom-right position-absolute"></div>
     </div>
-    <script type="text/javascript" src="app.js"></script>
+    <button id="boton" class="btn btn-primary mt-3">Cambiar carta</button>
+    <script src="app.js"></script>
   </body>
 </html>
