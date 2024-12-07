@@ -53,16 +53,16 @@ window.onload = function() {
       topPaloElemento.innerHTML = paloInfo.palo;
       bottomPaloElemento.innerHTML = paloInfo.palo;
 
-      // ahora eliminamos clases de palo anteriores
+      // y  eliminamos clases de palo anteriores
       cardElemento.classList.remove("spade", "club", "heart", "diamond");
 
       // a continuacion añadimos la nueva clase de palo
       cardElemento.classList.add(paloInfo.clase);
     }
   }
-  // agrgo un evento listener al boton con unclick genera una carta
+  // agrgo un evento listener al boton con id 'boton' con unclick  y genera una carta nueva
   document.querySelector("#boton").addEventListener("click", generarCarta);
 
-  // Generar una carta al cargar la página
+  // Genera una carta nueva tambien al cargar la página
   generarCarta();
 };
