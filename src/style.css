@@ -1,33 +1,47 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(68, 225, 25);
+  font-family: Arial, sans-serif;
+}
+
 .card {
+  border: 1px solid #000;
+  border-radius: 10px;
   width: 300px;
   height: 400px;
   background-color: white;
-  border-radius: 5%;
+  position: relative;
 }
 
 .palo {
   font-size: 6em;
-  border: 0px;
   padding: 0px;
 }
 
 .top-left {
-  top: 5px;
-  left: 5px;
+  margin-top: 0; /* Ajuste para acercar a la esquina */
+  margin-left: 0; /* Ajuste para acercar a la esquina */
+  justify-content: first baseline;
 }
 
 .bottom-right {
-  bottom: 10px;
-  right: 10px;
+  bottom: 0; /* Ajuste para acercar a la esquina */
+  right: 0; /* Ajuste para acercar a la esquina */
   transform: rotate(180deg);
 }
+
 .numero {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4em;
+  font-size: 6em;
 }
+
 .spade {
   color: black;
 }
