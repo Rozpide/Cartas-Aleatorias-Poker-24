@@ -29,16 +29,14 @@ window.onload = function() {
       { palo: "♦", clase: "diamond" }
     ];
     // funcion para generar un numero aleatori o dentro de un rango pendiente de asignar
-    function randomCartas(min, max) {
-      return Math.floor(Math.random() * (max - min) + min);
+    function randomCartas(length) {
+      return Math.floor(Math.random() * length);
     }
     //variables que generan un numero y palo aleatorio
     const carta =
-      numeroAleatorioParaCarta[
-        randomCartas(0, numeroAleatorioParaCarta.length)
-      ];
+      numeroAleatorioParaCarta[randomCartas(numeroAleatorioParaCarta.length)];
     const paloInfo =
-      numeroAleatorioParaPalo[randomCartas(0, numeroAleatorioParaPalo.length)];
+      numeroAleatorioParaPalo[randomCartas(numeroAleatorioParaPalo.length)];
     // obtenemos las referencias a los elementos del Dom
     const numeroElemento = document.querySelector(".remplazar-numero");
     const topPaloElemento = document.querySelector(".top-left");
