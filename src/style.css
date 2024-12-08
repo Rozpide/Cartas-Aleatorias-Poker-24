@@ -1,4 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,7 +7,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: rgb(38, 115, 16);
-  font-family: Helvetica, sans-serif, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 .card {
@@ -21,17 +22,17 @@ body {
 .palo {
   font-size: 6em;
   padding: 0px;
+  position: absolute; /* Añadir para posicionar de manera absoluta */
 }
 
 .top-left {
-  margin-top: 0; /* Ajuste para acercar a la esquina */
-  margin-left: 0; /* Ajuste para acercar a la esquina */
-  justify-content: first baseline;
+  top: 0;
+  left: 0;
 }
 
 .bottom-right {
-  bottom: 0; /* Ajuste para acercar a la esquina */
-  right: 0; /* Ajuste para acercar a la esquina */
+  bottom: 0;
+  right: 0;
   transform: rotate(180deg);
 }
 
@@ -42,18 +43,12 @@ body {
   font-size: 8em;
 }
 
-.spade {
-  color: black;
-}
-
+.spade,
 .club {
   color: black;
 }
 
-.heart {
-  color: red;
-}
-
+.heart,
 .diamond {
   color: red;
 }
