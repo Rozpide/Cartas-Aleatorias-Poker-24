@@ -28,11 +28,11 @@ window.onload = function() {
       { palo: "♥", clase: "heart" },
       { palo: "♦", clase: "diamond" }
     ];
-    // funcion para generar un numero aleatori o dentro de un rango pendiente de asignar
+    // funcion para generar un numero aleatori o dentro de un rango pendiente de asignar, que sera variable.length
     function randomCartas(length) {
       return Math.floor(Math.random() * length);
     }
-    //variables que generan un numero y palo aleatorio
+    //constantes que generan un numero y palo aleatorio
     const carta =
       numeroAleatorioParaCarta[randomCartas(numeroAleatorioParaCarta.length)];
     const paloInfo =
@@ -42,7 +42,7 @@ window.onload = function() {
     const topPaloElemento = document.querySelector(".top-left");
     const bottomPaloElemento = document.querySelector(".bottom-right");
     const cardElemento = document.querySelector(".card");
-    //verificamos que los elementos existen y los actualizamos
+    //verificamos que los elementos existen y los actualizamos con innerHTML de carta y paliInfo
     if (
       numeroElemento &&
       topPaloElemento &&
@@ -53,7 +53,7 @@ window.onload = function() {
       topPaloElemento.innerHTML = paloInfo.palo;
       bottomPaloElemento.innerHTML = paloInfo.palo;
 
-      // y  eliminamos clases de palo anteriores
+      // y  eliminamos clase de palo anterior
       cardElemento.classList.remove("spade", "club", "heart", "diamond");
 
       // a continuacion añadimos la nueva clase de palo
